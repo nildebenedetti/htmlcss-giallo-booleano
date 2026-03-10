@@ -28,7 +28,7 @@ main {
 
 @media screen and (min-width:993px) {
    main {
-    ckground-color: #f6f5f3;
+    background-color: #f6f5f3;
     padding: 50px 170px;
    }
    
@@ -152,6 +152,7 @@ si dispongono uno accanto all'altro */
 
 .social-networks {
     gap: 20px;
+    justify-content: space-between
 }
 
 .label {
@@ -159,6 +160,7 @@ si dispongono uno accanto all'altro */
 }
 
 /* BONUS #0.1 Large Mobile - I bottoni si allargao già da 576px */
+
 
 @media screen and (min-width:576px) {
     .btn {
@@ -169,6 +171,7 @@ si dispongono uno accanto all'altro */
 
     .social-networks {
         gap: 5px;
+        justify-content: space-between;
     }
 }
 
@@ -176,17 +179,19 @@ si dispongono uno accanto all'altro */
 
 @media screen and (min-width:769px) {
     .btn {
-        padding: 10px 55px;
-        display: inline-block;
+    padding: 10px 55px;
+       display: inline-block;
 
     }
 
     .social-networks {
         gap:10px;
+        display: flex;
+        width:100%;
+
     }
 }
 
-*/
 
 /* #2 Desktop - Compaiono i nomi delle piattaforme social */
 
@@ -195,11 +200,19 @@ si dispongono uno accanto all'altro */
         display:flex;
         gap:10px;
         align-items: center;
-        padding: 10px 45px;
+        padding: 10px 15px;
     }
     
+    .btn /* > .label*/ {
+        
+        flex-basis: calc((100% / 5) - (10px * 4) / 5);
+        flex-shrink: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
     .btn > .label {
-        display: block;
+        display: inline-block;
     }
 
 }
