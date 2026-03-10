@@ -8,8 +8,30 @@
 	justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     #topbar {
         justify-content: flex-start;
     }
 }
+
+/* Il padding del contenuto principale della pagina aumenta */
+
+main {
+	padding: 20px;
+}
+
+@media screen and (min-width: 769px) {
+    main {
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width:993) {
+   main {
+    ckground-color: #f6f5f3;
+    padding: 50px 170px;
+   }
+   
+   
+
+    }
