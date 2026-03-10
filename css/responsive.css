@@ -58,3 +58,54 @@ main {
    .recipe-title {font-size: x-large;
     }
 }
+
+/* Le informazioni della ricetta sotto il video si dispongono a griglia */
+
+.quick-notes ul {
+    display: block;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.quick-notes ul > li {
+    flex-shrink: shrink ;
+}
+
+@media screen and (min-width: 769px) {
+    .quick-notes ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        column-gap:10px;
+        
+    }
+
+    .quick-notes ul > li {
+    flex-shrink: 0;
+    flex-basis: calc((100% / 3) - (10px * 2) / 3 );
+}
+
+}
+
+/* I bottoni social si allargano */
+
+.btn {
+    padding: 10px 15px;
+}
+
+.social-networks {
+    gap: 20px;
+}
+
+@media screen and (min-width:769px) {
+    .btn {
+        padding: 10px 55px;
+
+    }
+
+    .social-networks {
+        gap:10px;
+    }
+}
+
+/*  */
