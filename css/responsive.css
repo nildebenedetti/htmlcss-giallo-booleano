@@ -142,7 +142,9 @@ si dispongono uno accanto all'altro */
 }
 
 
-/* I bottoni social si allargano */
+/* I bottoni social si allargano 
+
+#0 - mobile */
 
 .btn {
     padding: 10px 15px;
@@ -152,9 +154,16 @@ si dispongono uno accanto all'altro */
     gap: 20px;
 }
 
+.label {
+    display:none;
+}
+
+/* #1 - tablet - I bottoni social si allargano  */
+
 @media screen and (min-width:769px) {
     .btn {
         padding: 10px 55px;
+        display: inline-block;
 
     }
 
@@ -162,6 +171,22 @@ si dispongono uno accanto all'altro */
         gap:10px;
     }
 }
+/* #2 Desktop - Compaiono i nomi delle piattaforme social */
+
+@media screen and (min-width:993px) {
+    .btn {
+        display:flex;
+        gap:10px;
+        align-items: center;
+        padding: 10px 45px;
+    }
+    
+    .btn > .label {
+        display: block;
+    }
+
+}
+
 
 /* Appare banner pubblicitario */
 
