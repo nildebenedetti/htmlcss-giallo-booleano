@@ -26,7 +26,7 @@ main {
     }
 }
 
-@media screen and (min-width:993) {
+@media screen and (min-width:993px) {
    main {
     ckground-color: #f6f5f3;
     padding: 50px 170px;
