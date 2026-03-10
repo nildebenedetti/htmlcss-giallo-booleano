@@ -48,3 +48,13 @@ main {
 }
 
 /* La grandezza del titolo diventa più grande */
+
+.recipe-title {
+    font-size:medium;
+}
+
+
+@media screen and (min-width:769px) {
+   .recipe-title {font-size: x-large;
+    }
+}
