@@ -42,7 +42,7 @@ main {
 
 @media screen and (min-width:768px) {
     .recipe-origin {
-        display:inline-block;
+        display:inline;
     }
     
 }
@@ -50,7 +50,7 @@ main {
 /* Tablet - La grandezza del titolo diventa più grande */
 
 .recipe-title {
-    font-size:medium;
+    font-size:1rem;
 }
 
 
