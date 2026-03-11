@@ -119,28 +119,24 @@ si dispongono uno accanto all'altro */
 	aspect-ratio: unset;
 }
 
-@media screen and (min-width:993px) {
+@media screen and (min-width:992px) {
 
 .recipe-card {
     display:flex;
-    align-items: center;
-    justify-content: flex-start;
+
+        .recipe-video {
+        flex-basis: 70%;
+        }
+
+        .recipe-info {
+            flex-basis: 30%;
+
+        }
 
 }
 
-.recipe-video {
-    height: 30vw;
-}
 
-.recipe-video iframe {
-	aspect-ratio: 16-9;
-}
 
-}
-
-/* questo per rendere più carine le info */
-.recipe-info {
-    align-self: flex-start;
 }
 
 
